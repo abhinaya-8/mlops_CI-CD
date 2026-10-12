@@ -1,4 +1,3 @@
-```python
 import unittest
 from app import app
 
@@ -54,4 +53,3 @@ class TestPredictionAPI(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-```
