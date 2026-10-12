@@ -1,4 +1,4 @@
-
+```yaml
 name: First Python CI
 
 on:
@@ -26,5 +26,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
       - name: Run automated tests
         run: python -m unittest discover -v
+```
